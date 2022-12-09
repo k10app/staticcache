@@ -190,7 +190,7 @@ targets.forEach(t=>{
     cpy = cpy.replaceAll("#090909",darken(t.v,-0.3))
     
     var fname = nt+"-"+t.n+".svg"
-    pushCatalog(t.n+" shirt","This is a "+t.n+" shirt.  Wear it any time!",10,nt+"-plain.svg")
+    pushCatalog(t.n+" shirt","This is a "+t.n+" shirt.  Wear it any time!",10,fname)
     imgpush(fname,cpy)
     
 })
@@ -198,5 +198,5 @@ targets.forEach(t=>{
 
 imghtml.push("</body></html>")
 
-fs.writeFileSync("cup.html",imghtml.join("\n"))
+fs.writeFileSync("imagen.html",imghtml.join("\n"))
 fs.writeFileSync("catalog.json",JSON.stringify(catalog,null,2))

@@ -85,6 +85,10 @@ function darken(hex,mod) {
     return result
 }
 
+//from https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
+String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
 
 function minDark(hex,minDark) {
     
@@ -142,7 +146,7 @@ var replaceMe = [
     "#222222",//linecup
     "#1f1f1f",//innerringlinecup
 ]
-pushCatalog("Grey"+" mug","This is a "+"grey"+" mug. Keeps you drinking coffee all day",3,"static-mug-export-plain.svg")
+pushCatalog("Grey"+" Mug","This is a "+"grey"+" mug. Keeps you drinking coffee all day",3,"static-mug-export-plain.svg")
 
 targets.forEach(t=>{
     var cpy = ""+mug
@@ -152,7 +156,7 @@ targets.forEach(t=>{
     cpy = cpy.replaceAll(replaceMe[2],darken(t.v,-0.1))
     
     var fname = "static-mug-export-"+t.n+".svg"
-    pushCatalog(t.n+" mug","This is a "+t.n+" mug. Keeps you drinking coffee all day",3,fname)
+    pushCatalog(t.n.toProperCase()+" Mug","This is a "+t.n+" mug. Keeps you drinking coffee all day",3,fname)
     imgpush(fname,cpy)
     
 })
@@ -162,7 +166,7 @@ targets.forEach(t=>{
 var sticker = fs.readFileSync("../src/static-sticker-export-plain.svg")
 imgpush("static-sticker-export-plain.svg",sticker)
 
-pushCatalog("Grey"+" sticker","This is a "+"grey"+" sticker. Stick it everywhere!",1,"static-sticker-export-plain.svg")
+pushCatalog("Grey"+" Sticker","This is a "+"grey"+" sticker. Stick it everywhere!",1,"static-sticker-export-plain.svg")
 
 targets.forEach(t=>{
     var cpy = ""+sticker
@@ -171,7 +175,7 @@ targets.forEach(t=>{
 
     
     var fname = "static-sticker-export-"+t.n+".svg"
-    pushCatalog(t.n+" sticker","This is a "+t.n+" sticker. Stick it everywhere!",1,fname)
+    pushCatalog(t.n.toProperCase()+" Sticker","This is a "+t.n+" sticker. Stick it everywhere!",1,fname)
     imgpush(fname,cpy)
     
 })
@@ -180,7 +184,7 @@ targets.forEach(t=>{
 var nt = "static-tshirt-export"
 var svgt = fs.readFileSync("../src/"+nt+"-plain.svg")
 imgpush(nt+"-plain.svg",svgt)
-pushCatalog("Grey"+" shirt","This is a "+"grey"+" shirt. Wear it any time!",10,nt+"-plain.svg")
+pushCatalog("Grey"+" Shirt","This is a "+"grey"+" shirt. Wear it any time!",10,nt+"-plain.svg")
 
 
 targets.forEach(t=>{
@@ -190,7 +194,7 @@ targets.forEach(t=>{
     cpy = cpy.replaceAll("#090909",darken(t.v,-0.3))
     
     var fname = nt+"-"+t.n+".svg"
-    pushCatalog(t.n+" shirt","This is a "+t.n+" shirt.  Wear it any time!",10,fname)
+    pushCatalog(t.n.toProperCase()+" Shirt","This is a "+t.n+" shirt.  Wear it any time!",10,fname)
     imgpush(fname,cpy)
     
 })

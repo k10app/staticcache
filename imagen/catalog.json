@@ -4,146 +4,244 @@
     "description": "This is a grey mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-plain.svg",
-    "stock": 3261
+    "stock": 7986
   },
   {
     "name": "Orange Mug",
     "description": "This is a orange mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-orange.svg",
-    "stock": 9667
+    "stock": 8524
   },
   {
     "name": "Yellow Mug",
     "description": "This is a yellow mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-yellow.svg",
-    "stock": 5821
+    "stock": 9365
   },
   {
     "name": "Purple Mug",
     "description": "This is a purple mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-purple.svg",
-    "stock": 7160
+    "stock": 4148
   },
   {
     "name": "Bordeaux Mug",
     "description": "This is a bordeaux mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-bordeaux.svg",
-    "stock": 8183
+    "stock": 9806
   },
   {
     "name": "Turquoise Mug",
     "description": "This is a turquoise mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-turquoise.svg",
-    "stock": 7389
+    "stock": 4132
   },
   {
     "name": "Darkpurple Mug",
     "description": "This is a darkpurple mug. Keeps you drinking coffee all day",
     "price": 3,
     "imgurl": "/static/static-mug-export-darkpurple.svg",
-    "stock": 2309
+    "stock": 4109
   },
   {
     "name": "Grey Sticker",
     "description": "This is a grey sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-plain.svg",
-    "stock": 8518
+    "stock": 9420
   },
   {
     "name": "Orange Sticker",
     "description": "This is a orange sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-orange.svg",
-    "stock": 9006
+    "stock": 7377
   },
   {
     "name": "Yellow Sticker",
     "description": "This is a yellow sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-yellow.svg",
-    "stock": 4968
+    "stock": 3966
   },
   {
     "name": "Purple Sticker",
     "description": "This is a purple sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-purple.svg",
-    "stock": 8265
+    "stock": 7044
   },
   {
     "name": "Bordeaux Sticker",
     "description": "This is a bordeaux sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-bordeaux.svg",
-    "stock": 4481
+    "stock": 8154
   },
   {
     "name": "Turquoise Sticker",
     "description": "This is a turquoise sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-turquoise.svg",
-    "stock": 7106
+    "stock": 5330
   },
   {
     "name": "Darkpurple Sticker",
     "description": "This is a darkpurple sticker. Stick it everywhere!",
     "price": 1,
     "imgurl": "/static/static-sticker-export-darkpurple.svg",
-    "stock": 2516
+    "stock": 2598
   },
   {
     "name": "Grey Shirt",
     "description": "This is a grey shirt. Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-plain.svg",
-    "stock": 9809
+    "stock": 4227
   },
   {
     "name": "Orange Shirt",
     "description": "This is a orange shirt.  Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-orange.svg",
-    "stock": 2083
+    "stock": 8354
   },
   {
     "name": "Yellow Shirt",
     "description": "This is a yellow shirt.  Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-yellow.svg",
-    "stock": 6350
+    "stock": 7822
   },
   {
     "name": "Purple Shirt",
     "description": "This is a purple shirt.  Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-purple.svg",
-    "stock": 9110
+    "stock": 2779
   },
   {
     "name": "Bordeaux Shirt",
     "description": "This is a bordeaux shirt.  Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-bordeaux.svg",
-    "stock": 7535
+    "stock": 9261
   },
   {
     "name": "Turquoise Shirt",
     "description": "This is a turquoise shirt.  Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-turquoise.svg",
-    "stock": 3481
+    "stock": 9996
   },
   {
     "name": "Darkpurple Shirt",
     "description": "This is a darkpurple shirt.  Wear it any time!",
     "price": 10,
     "imgurl": "/static/static-tshirt-export-darkpurple.svg",
-    "stock": 9215
+    "stock": 9445
+  },
+  {
+    "name": "Grey Backpack",
+    "description": "This is a grey backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-plain.svg",
+    "stock": 4783
+  },
+  {
+    "name": "Orange Shirt",
+    "description": "This is a orange backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-orange.svg",
+    "stock": 6250
+  },
+  {
+    "name": "Yellow Shirt",
+    "description": "This is a yellow backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-yellow.svg",
+    "stock": 6333
+  },
+  {
+    "name": "Purple Shirt",
+    "description": "This is a purple backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-purple.svg",
+    "stock": 4665
+  },
+  {
+    "name": "Bordeaux Shirt",
+    "description": "This is a bordeaux backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-bordeaux.svg",
+    "stock": 5826
+  },
+  {
+    "name": "Turquoise Shirt",
+    "description": "This is a turquoise backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-turquoise.svg",
+    "stock": 9924
+  },
+  {
+    "name": "Darkpurple Shirt",
+    "description": "This is a darkpurple backpack. Carry anything, anytime with you !",
+    "price": 10,
+    "imgurl": "/static/static-backpack-export-darkpurple.svg",
+    "stock": 5537
+  },
+  {
+    "name": "Grey Socks",
+    "description": "These are grey socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-plain.svg",
+    "stock": 6541
+  },
+  {
+    "name": "Orange Socks",
+    "description": "These are orange socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-orange.svg",
+    "stock": 7251
+  },
+  {
+    "name": "Yellow Socks",
+    "description": "These are yellow socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-yellow.svg",
+    "stock": 4660
+  },
+  {
+    "name": "Purple Socks",
+    "description": "These are purple socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-purple.svg",
+    "stock": 9048
+  },
+  {
+    "name": "Bordeaux Socks",
+    "description": "These are bordeaux socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-bordeaux.svg",
+    "stock": 3695
+  },
+  {
+    "name": "Turquoise Socks",
+    "description": "These are turquoise socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-turquoise.svg",
+    "stock": 5660
+  },
+  {
+    "name": "Darkpurple Socks",
+    "description": "These are darkpurple socks. Don't get cold feet, wear our socks !",
+    "price": 10,
+    "imgurl": "/static/static-socks-export-darkpurple.svg",
+    "stock": 9136
   }
 ]

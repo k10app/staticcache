@@ -105,6 +105,21 @@ function minDark(hex,minDark) {
     return result
 }
 
+function saturate(hex,mod) {
+    
+    var rrgb = hexToRgb(hex)
+    var rhsl = rgbToHsl(rrgb.r,rrgb.g,rrgb.b)
+    
+    var modres =  Math.min(Math.max(rhsl[1]+mod,0),1)
+
+    var xrgb = hslToRgb(rhsl[0],modres,rhsl[2])
+    var result = rgbToHex(Math.round(xrgb[0]),Math.round(xrgb[1]),Math.round(xrgb[2]))
+
+    //console.log(hex,rrgb,rhsl,modres,xrgb,result)
+
+    return result
+}
+
 
 
 
@@ -199,6 +214,46 @@ targets.forEach(t=>{
     
 })
 
+
+// backpack
+var nt = "static-backpack-export"
+var svgt = fs.readFileSync("../src/"+nt+"-plain.svg")
+
+imgpush(nt+"-plain.svg",svgt)
+pushCatalog("Grey"+" Backpack","This is a "+"grey"+" backpack. Carry anything, anytime with you !",10,nt+"-plain.svg")
+
+
+targets.forEach(t=>{
+    var cpy = ""+svgt
+
+    cpy = cpy.replaceAll("#6aa5dc",darken(saturate(t.v,-0.05),0.05))
+    cpy = cpy.replaceAll("#3b8dd8",t.v)
+    
+    var fname = nt+"-"+t.n+".svg"
+    pushCatalog(t.n.toProperCase()+" Shirt","This is a "+t.n+" backpack. Carry anything, anytime with you !",10,fname)
+    imgpush(fname,cpy)
+    
+})
+
+// socks
+var nt = "static-socks-export"
+var svgt = fs.readFileSync("../src/"+nt+"-plain.svg")
+
+imgpush(nt+"-plain.svg",svgt)
+pushCatalog("Grey"+" Socks","These are "+"grey"+" socks. Don't get cold feet, wear our socks !",10,nt+"-plain.svg")
+
+
+targets.forEach(t=>{
+    var cpy = ""+svgt
+
+    cpy = cpy.replaceAll("#4e4d53",darken(t.v,-0.1))
+    cpy = cpy.replaceAll("#aaa9af",t.v)
+    
+    var fname = nt+"-"+t.n+".svg"
+    pushCatalog(t.n.toProperCase()+" Socks","These are "+t.n+" socks. Don't get cold feet, wear our socks !",10,fname)
+    imgpush(fname,cpy)
+    
+})
 
 imghtml.push("</body></html>")
 
